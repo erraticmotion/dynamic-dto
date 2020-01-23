@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ErraticMotion.DynamicDto</id>
+    <version>0.0.1</version>
+    <title>ErraticMotion DynamicDto</title>
+    <authors>Rob Ives</authors>
+    <owners>RobIves</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/erraticmotion/dynamic-dto</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Uses Reflection.Emit to dynamically build data transfer objects based on an interface not a type.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright Erratic Motion 2018</copyright>
+    <tags>DTO</tags>
+  </metadata>
+</package>

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3389E9E-AF9D-4C35-A377-E7150B4B81D4}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		SolutionInfo.cs = SolutionInfo.cs
+		..\stylecop.json = ..\stylecop.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErraticMotion.DynamicDto", "ErraticMotion.DynamicDto\ErraticMotion.DynamicDto.csproj", "{6536A97F-B08F-47DB-AD5C-3A0E070B4C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErraticMotion.DynamicDto.Tests", "ErraticMotion.DynamicDto.Tests\ErraticMotion.DynamicDto.Tests.csproj", "{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{4B76F190-B2C5-47DA-85B5-825912D376E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9489781B-5C0C-448F-8BEF-28F00A8D89CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6536A97F-B08F-47DB-AD5C-3A0E070B4C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6536A97F-B08F-47DB-AD5C-3A0E070B4C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6536A97F-B08F-47DB-AD5C-3A0E070B4C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6536A97F-B08F-47DB-AD5C-3A0E070B4C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6536A97F-B08F-47DB-AD5C-3A0E070B4C1E} = {4B76F190-B2C5-47DA-85B5-825912D376E5}
+		{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16} = {9489781B-5C0C-448F-8BEF-28F00A8D89CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49D4289D-BACA-46D4-A596-D807DDBD2BE0}
+	EndGlobalSection
+EndGlobal

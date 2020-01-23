@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8BE00EC-0D8A-4FA7-B1FC-1A10DFD47C16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicDto</RootNamespace>
+    <AssemblyName>ErraticMotion.DynamicDto.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ErraticMotion.DynamicDto.Tests.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentAssertions, Version=4.19.4.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.19.4\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions.Core, Version=4.19.4.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.19.4\lib\net45\FluentAssertions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.5.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.5.0\lib\net45\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
+    <Compile Include="DynamicBuilderBehaviourBase.cs" />
+    <Compile Include="DynamicBuilderDeserializationBehaviour.cs" />
+    <Compile Include="DynamicBuilderDtoArgumentsBehaviour.cs" />
+    <Compile Include="DynamicBuilderDtoInheritanceBehaviour.cs" />
+    <Compile Include="DynamicBuilderDtoMethodBehaviour.cs" />
+    <Compile Include="DynamicBuilderDtoMethodsBehaviour.cs" />
+    <Compile Include="DynamicBuilderDtoObjectBehaviour.cs" />
+    <Compile Include="DynamicBuilderDtoReturnValueBehaviour.cs" />
+    <Compile Include="DynamicBuilderEmptyInterfaceBehaviour.cs" />
+    <Compile Include="DynamicBuilderGetSetBehaviour.cs" />
+    <Compile Include="DynamicBuilderGetSetValuesUsingCtorBehaviour.cs" />
+    <Compile Include="DynamicBuilderGetSetValuesUsingGenericCtorBehaviour.cs" />
+    <Compile Include="DynamicBuilderGetSetValuesUsingReflectionBehaviour.cs" />
+    <Compile Include="DynamicBuilderOnlyGetBehaviour.cs" />
+    <Compile Include="DynamicBuilderOnlySetBehaviour.cs" />
+    <Compile Include="DynamicBuilderSerializationBase.cs" />
+    <Compile Include="DynamicBuilderSerializationBehaviour.cs" />
+    <Compile Include="DynamicBuilderContractTests.cs" />
+    <Compile Include="DynamicBuilderVerifyExtensions.cs" />
+    <Compile Include="Objects\DataTransferObject.cs" />
+    <Compile Include="Objects\IDto.cs" />
+    <Compile Include="Objects\IDtoArguments.cs" />
+    <Compile Include="Objects\IDtoBase.cs" />
+    <Compile Include="Objects\IDtoEmpty.cs" />
+    <Compile Include="Objects\IDtoExtends.cs" />
+    <Compile Include="Objects\IDtoMethod.cs" />
+    <Compile Include="Objects\IDtoMethods.cs" />
+    <Compile Include="Objects\IDtoReturnValuesObject.cs" />
+    <Compile Include="Objects\IDtoWithObjects.cs" />
+    <Compile Include="Objects\IDtoWithOnlyGet.cs" />
+    <Compile Include="Objects\IDtoWithOnlySet.cs" />
+    <Compile Include="Objects\IGenericDto.cs" />
+    <Compile Include="Objects\IGenericDtoExtends.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ErraticMotion.DynamicDto\ErraticMotion.DynamicDto.csproj">
+      <Project>{6536a97f-b08f-47db-ad5c-3a0e070b4c1e}</Project>
+      <Name>ErraticMotion.DynamicDto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\stylecop.json">
+      <Link>stylecop.json</Link>
+    </AdditionalFiles>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
